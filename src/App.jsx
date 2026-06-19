@@ -4,6 +4,7 @@ import Products from './components/Products'
 import About from './components/About'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
+import ProductsDetailed from './components/ProductsDetailed'
 const App = () => {
   const router=createBrowserRouter([
     {path:"/",
@@ -22,6 +23,12 @@ const App = () => {
       element:<div>
          <Navbar />
         <Products />
+      </div>
+    },
+    {path:"/products/:id",
+      element:<div>
+         <Navbar />
+        <ProductsDetailed />
       </div>
     },
   ])
