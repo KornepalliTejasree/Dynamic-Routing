@@ -1,12 +1,12 @@
 import React from 'react'
-import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+import {createHashRouter,RouterProvider} from 'react-router-dom'
 import Products from './components/Products'
 import About from './components/About'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import ProductsDetailed from './components/ProductsDetailed'
 const App = () => {
-  const router=createBrowserRouter([
+  const router=createHashRouter([
     {path:"/",
       element:<div>
         <Navbar />
